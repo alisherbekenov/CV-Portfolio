@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alisher Bekenov</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="" href="https://iconsetc.com/icons-watermarks/flat-circle-white-on-red/bfa/bfa_code/bfa_code_flat-circle-white-on-red_512x512.png">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="custom.js"></script>
+	<script type="text/javascript" src="mask.js"></script>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	  <script src="/js/go_top.js"></script>
+	<script>
+		var $page = $('html, body');
+$('a[href*="#"]').click(function() {
+    $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 1500);
+    return false;
+});
+$(document).ready(function(){
+  $('body').append('<a href="#" id="go-top" title="Вверх">Вверх</a>');
+});
+
+$(function() {
+ $.fn.scrollToTop = function() {
+  $(this).hide().removeAttr("href");
+  if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
+  var scrollDiv = $(this);
+  $(window).scroll(function() {
+   if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
+   else $(scrollDiv).fadeIn("slow")
+  });
+  $(this).click(function() {
+   $("html, body").animate({scrollTop: 0}, "slow")
+  })
+ }
+});
+
+$(function() {
+ $("#go-top").scrollToTop();
+});
+
+	</script>
+</head>
+<body>
+	<div class="first" id="resume">
+		<div class="heads">
+		<ul class="parentr">
+    		<a href="#resume"><li class="child">ГЛАВНАЯ</li></a>
+    		<a href="#aboutm"><li class="child">ОБО МНЕ</li></a>
+    		<a href="#skillme"><li class="child">НАВЫКИ</li></a>
+    		<a href="#"><li class="child">РАБОТЫ</li></a>
+    		<a href="#five"><li class="child">КОНТАКТЫ</li></a>
+		</ul>
+		</div>
+
+		<div class="main">
+		<div class="text middle" data-text="<ALISHER BEKENOV/>"><b class="red"><</b>ALISHER BEKENOV<b class="red">/></b></div></div>
+		<div class="wrapper">
+  			<h1 class="title">Frontend developer on HTML5 CSS3 JS...</h1>
+		</div>
+	</div><hr class="hrr">
+	<div class="two" id="aboutm">
+		<div class="aboutme" align="center">Обо Мне</div>
+		<div><img src="https://sun9-35.userapi.com/SCz6a8iRCF8CaGnN1AhS65kFx_6eGx2nx6DBWw/qxYrhHsrASU.jpg" height="120vw" width="10%" class="myp"></div>
+		<div class="textme"><p>Я студент 4-го курса профессия: Информационные системы университета <p></p> имени Ильяса Джансугурова в городе Талдыкорган. </p><p class="textmein"> Ищу работу на пост стажора или младшего FrontEnd разработчика <p></p> с дальнейшим трудоустройством.</p><p class="textmein"> Знаю языки разметки HTML5,CSS3,JS а также <p></p>языки программирование PYTHON,C#,C++.</p><p>
+			<div style="width: 100%; height:6vw; margin-top: 5%; line-height: 2;" >
+			<div class="dinme" style="float: left; width: 28%; height: 4vw;"><span class="redaboutme">Имя:</span> Алишер
+				 <p><span class="redaboutme">Страна:</span> Казахстан</p>
+			</div>
+			<div class="dinme" style="float: left; width: 25%; height: 4vw;"><span class="redaboutme">Возраст:</span> 20
+				 <p><span class="redaboutme">Город:</span> Атырау</p>
+			</div>
+			<div class="dinme" style="float: left; width: 45%; height: 4vw;"><span class="redaboutme">Специальность:</span> FrontEnd 
+				 <p><span class="redaboutme">Е-Майл:</span> alisher.bekenov@mail.ru</p>
+			</div>
+		</div>
+		</div>
+		</div>
+
+	</div><hr class="hrr">
+			<div class="three" id="skillme">
+				<div class="aboutme" align="center">Навыки</div>
+				<p class="skillstext"><span style="color: red;">/ </span>HTML5</p><p class="skillsprocent">95%</p>
+				<div class="skill"><div class="skillin"></div></div>
+				<p class="skillstext1"><span style="color: red;">/ </span>CSS3</p><p class="skillsprocent1">86%</p>
+				<div class="skill1"><div class="skillin1"></div></div>
+				<p class="skillstext2"><span style="color: red;">/</span>JAVASCRIPT</p><p class="skillsprocent2">50%</p>
+				<div class="skill2"><div class="skillin2"></div></div>
+				<p class="skillstext3"><span style="color: red;">/</span>PYTHON</p><p class="skillsprocent3">75%</p>
+				<div class="skill3"><div class="skillin3"></div></div>
+				<p class="skillstext4"><span style="color: red;">/</span>PHOTOSHOP</p><p class="skillsprocent4">90%</p>
+				<div class="skill4"><div class="skillin4"></div></div>
+				
+			</div><br><br>
+		<hr class="hrr">
+		<div class="four">
+			<div class="aboutme" align="center">Софт Скилл</div>
+			 	<div class="textsoft"><p>«Цена величия — это ответственность» Уинстон Черчилль. <br><br><br><p>Фраза звучит пафосно, но я с ней согласен. Считаю самым главным рабочим качеством человека - ответственность.
+				Говоря о себе, могу смело заявить, что это одно из самых сильных моих качеств. Наверняка я не самый лучший разработчик, не обладаю самыми полными знаниями по всем необходимым отраслям. Но у меня задана очень высокая планка ответственности. Если я взялся за работу - работа будет выполнена.</p><br><br><br>В общем и целом я могу выделить в себе следующие рабочие качества:</p></div>
+				<div class="softskill">
+				<p class="sf"><span style="color: red;">/ </span>Ответственность</p>
+				<div class="sfin"><div class="sfin11"></div></div>
+				<p class="sf"><span style="color: red;">/ </span>Обучаемость</p>
+				<div class="sfin2"><div class="sfin22"></div></div>
+				<p class="sf"><span style="color: red;">/ </span>Коммуникабельность</p>
+				<div class="sfin3"><div class="sfin33"></div></div>
+				<p class="sf"><span style="color: red;">/ </span>Самоорганизация</p>
+				<div class="sfin4"><div class="sfin44"></div></div>
+				<p class="sf"><span style="color: red;">/ </span>Стрессоустойчивость и решение проблем</p>
+				<div class="sfin5"><div class="sfin55"></div></div>
+				<p class="sf"><span style="color: red;">/ </span>Управленческие навыки</p>
+				<div class="sfin6"><div class="sfin66"></div></div>
+				</div>
+		</div></div><br><br>
+		<hr class="hrr">
+		<div class="five" id="five">
+			<p class="cont">КОНТАКТЫ</p>
+		<form class="form" >
+	<input type="text" name="mfbName" placeholder="Имя:" required/>
+	<input type="text" name="mfbMail" placeholder="Email:" required/>
+	<input type="text" name="mfbPhone" placeholder="Телефон:" required/>
+	<input type="submit" value="Отправить" />
+		</form>
+	</div>
+
+</body>
+</html>

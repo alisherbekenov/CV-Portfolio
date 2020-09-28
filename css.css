@@ -1,0 +1,544 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: #31313a;
+  color: #c7c7c7;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 0PX;
+}
+body {
+font-family: 'Roboto Mono', monospace;  
+}
+.middle {
+  position: absolute;
+  top: 24vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text {
+  color: #fff;
+  text-transform: uppercase;
+  align-items: center;
+  font-size: 4.4vw;
+}
+.text::before, .text::after{
+  content: attr(data-text);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100;
+  z-index: -1;
+}
+.text::before{
+  color: #ff00c1;
+  animation: glitch-effect 3s infinite;
+}
+.text::after{
+  color: #3498db;
+  animation: glitch-effect 2s infinite;
+}
+@keyframes glitch-effect{
+  0%{
+    left: -2px;
+    top: -2px;
+  }
+   25%{
+    left: 3px;
+    top: 1px;
+  }
+   50%{
+    left: -1px;
+    top: 2px;
+  }
+   75%{
+    left: 1px;
+    top: -1px;
+  }
+   100%{
+    left: 0px;
+    top: -2px;
+  }
+}
+.parentr{
+font-family: 'Roboto Mono', monospace;
+width:51%;
+height:150px;
+padding:2%;
+white-space:nowrap;
+color: ;
+text-align: center;
+position: absolute;
+left: 46.7%;
+transform: translateX(-50%);
+}
+.child{
+width:20%;
+height:100px;
+margin:5px;
+display:inline-block;
+}
+.parentr a {
+  text-decoration: none;
+  color: ;
+}
+.red {
+  color: red;
+}
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  top: 27vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title{
+  width: 100%;
+  width: 36ch;
+  overflow: hidden;
+  color: ;
+  font-size: 13px;
+font-family: 'Roboto Mono', monospace;
+  white-space: nowrap;
+  border-right: 4px solid red;
+  animation: printed-text 3s steps(21),
+             flashin-border .90s step-start infinite;
+}
+
+@keyframes flashin-border{
+  0%{
+    border-color: red;
+  }
+  50%{
+    border-color: transparent;
+  }
+  100%{
+    border-color: red;
+  }
+}
+
+@keyframes printed-text{
+  from {
+    width: 0%;
+  }
+}
+.aboutme{
+  font-size: 1.2vw;
+  margin-left: 25%;
+  border-bottom: 1px solid red; 
+  width: 8vw;
+  margin-top: 6%;
+  position: absolute;
+}
+.first{
+  width: 100%;
+  height: 45vw;
+}
+.two{
+  width: 100%;
+  height: 45vw;
+  }
+.myp{
+  width: 7%;
+  height: 7.5vw;
+  margin-top: 12%;
+  position: absolute;
+  margin-left: 25.5%;
+  border-radius: 100px; /* Радиус скругления */
+  border: 2px solid red; /* Параметры рамки */
+  box-shadow: 0 0 7px #666; /* Параметры тени */
+}
+.textme{
+  width: 50%;
+  height: 5vw;
+  margin-top: 11%;
+  margin-left: 35%;
+  position: absolute;
+font-family: 'Roboto Mono', monospace;
+  font-size: 1.1vw; 
+    color: #A2A2A6;
+
+}
+.textmein{
+  margin-top: 8%;
+}
+.hrr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,.3);
+  border-bottom: 1px solid rgba(0,0,0,.08);
+  margin: 2.5em 0;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.redaboutme{
+  color: red;
+
+}
+.three{
+  width: 100%;
+  height: 45vw;
+}
+/* стили для первого навыка HTML5 */
+.skill {
+  width: 50%;
+  height: 5px;
+  background-color:#c7c7c7;
+  border-radius: 100px; /* Радиус скругления */
+  border: 0.06vw solid; /* Параметры рамки */
+  margin-left: 25%;
+  margin-right: 25%;
+  position: absolute;
+  margin-top: 15%;
+}
+.skillin {
+  width: 95%;
+  height: 3px;
+  margin-left: 1%;
+  margin-right: 4%;
+  background-color: red;
+  border-radius: 100px; /* Радиус скругления */
+  border: 0.06vw solid; /* Параметры рамки */
+}
+.skillstext{
+  font-size: 1vw;
+  margin-left: 26%; 
+  width: 5vw;
+  margin-top: 13%;
+  position: absolute; 
+}
+.skillsprocent{
+  font-size: 1vw;
+  margin-left: 76%; 
+  width: 5vw;
+  margin-top: 14.7%;
+  position: absolute;  
+}
+/* ---------------------------КОНЕЦ первого навыка */
+/* стили для второго навыка CSS3 */
+
+.skillstext1{
+  font-size: 1vw;
+  margin-left: 26%; 
+  width: 5vw;
+  margin-top: 20%;
+  position: absolute; 
+}
+.skillsprocent1{
+  font-size: 1vw;
+  margin-left: 76%; 
+  width: 5vw;
+  margin-top: 21.7%;
+  position: absolute;  
+}
+.skill1 {
+  width: 50%;
+  height: 5px;
+  background-color:#c7c7c7;
+  border-radius: 100px; /* Радиус скругления */
+  border: 0.06vw solid; /* Параметры рамки */
+  margin-left: 25%;
+  margin-right: 25%;
+  position: absolute;
+  margin-top: 22%;
+}
+.skillin1 {
+  width: 86%;
+  height: 3px;
+  margin-left: 1%;
+  margin-right: 13%;
+  background-color: red;
+  border-radius: 100px; /* Радиус скругления */
+  border: 0.06vw solid; /* Параметры рамки */
+}
+/* ---------------------------КОНЕЦ второго навыка */
+/* стили для третьего  навыка JS */
+.skillstext2{
+  font-size: 1vw;
+  margin-left: 26%; 
+  width: 5vw;
+  margin-top: 27%;
+  position: absolute; 
+}
+.skillsprocent2{
+  font-size: 1vw;
+  margin-left: 76%; 
+  width: 5vw;
+  margin-top: 28.7%;
+  position: absolute;  
+}
+.skill2 {
+  width: 50%;
+  height: 5px;
+  background-color:#c7c7c7;
+  border-radius: 100px; /* Радиус скругления */
+  border: 0.06vw solid; /* Параметры рамки */
+  margin-left: 25%;
+  margin-right: 25%;
+  position: absolute;
+  margin-top: 29%;
+}
+.skillin2 {
+  width: 50%;
+  height: 3px;
+  margin-left: 1%;
+  margin-right: 49%;
+  background-color: red;
+  border-radius: 100px; /* Радиус скругления */
+  border: 0.06vw solid; /* Параметры рамки */
+}
+/* стили для четвертого  навыка Python */
+.skillstext3{
+  font-size: 1vw;
+  margin-left: 26%; 
+  width: 5vw;
+  margin-top: 34%;
+  position: absolute; 
+}
+.skillsprocent3{
+  font-size: 1vw;
+  margin-left: 76%; 
+  width: 5vw;
+  margin-top: 35.7%;
+  position: absolute;  
+}
+.skill3 {
+  width: 50%;
+  height: 5px;
+  background-color:#c7c7c7;
+  border-radius: 100px; /* Радиус скругления */
+  border: 0.06vw solid; /* Параметры рамки */
+  margin-left: 25%;
+  margin-right: 25%;
+  position: absolute;
+  margin-top: 36%;
+}
+.skillin3 {
+  width: 75%;
+  height: 3px;
+  margin-left: 1%;
+  margin-right: 9%;
+  background-color: red;
+  border-radius: 100px; /* Радиус скругления */
+  border: 0.06vw solid; /* Параметры рамки */
+}
+/* стили для пятого  навыка photoshop */
+.skillstext4{
+  font-size: 1vw;
+  margin-left: 26%; 
+  width: 5vw;
+  margin-top: 41%;
+  position: absolute; 
+}
+.skillsprocent4{
+  font-size: 1vw;
+  margin-left: 76%; 
+  width: 5vw;
+  margin-top: 42.7%;
+  position: absolute;  
+}
+.skill4 {
+  width: 50%;
+  height: 5px;
+  background-color:#c7c7c7;
+  border-radius: 100px; /* Радиус скругления */
+  border: 0.06vw solid; /* Параметры рамки */
+  margin-left: 25%;
+  margin-right: 25%;
+  position: absolute;
+  margin-top: 43%;
+}
+.skillin4 {
+  width: 90%;
+  height: 3px;
+  margin-left: 1%;
+  margin-right: 9%;
+  background-color: red;
+  border-radius: 100px; /* Радиус скругления */
+  border: 0.06vw solid; /* Параметры рамки */
+}
+.textsoft{
+  font-size: 1vw;
+  width: 53%;
+  margin-left: 25%;
+  position: absolute;
+  margin-top: 10%;
+  color: #A2A2A6;
+}
+.textsoft p{
+  color: #A2A2A6;  
+}
+.textme p{
+    color: #A2A2A6;
+
+}
+.softskill{
+  width: 60%;
+  margin-top: 24%;
+  position: absolute;
+  margin-left: 25%;
+  margin-right: 25%;
+
+}
+.sf{
+  width: 50%;
+  float: left;
+  height: 1.4vw;
+  font-size: 1vw;
+  margin-top: 5%;
+  margin-bottom: 1%;
+
+}
+.sfin{
+  width: 40%;
+  float: left;
+  height: 3px;
+  margin-left: 0%;
+  margin-right: 0%;
+  background-color: #c7c7c7;
+  position: absolute;
+  margin-top: 8%;
+}
+.sfin11{
+  width: 95%;
+}
+.sfin22{
+  width: 95%;
+}
+.sfin33{
+  width: 90%;
+}
+.sfin44{
+  width: 90%;
+}
+.sfin55{
+  width: 86%;
+}
+.sfin66{
+  width: 80%;
+}
+.sfin11,.sfin22,.sfin33, .sfin44, .sfin55, .sfin66{
+background-color: red;  
+height: 3px;
+}
+.four{
+  width: 100%;
+  height: 45vw;
+}
+.sfin2{
+  width: 40%;
+  float: left;
+  height: 3px;
+  margin-left: 50%;
+  margin-right: 0%;
+  background-color: #c7c7c7;
+  position: absolute;
+  margin-top: 8%; 
+}
+.sfin3{
+  width: 40%;
+  float: left;
+  height: 3px;
+  margin-left: 0%;
+  margin-right: 0%;
+  background-color: #c7c7c7;
+  position: absolute;
+  margin-top: 16%; 
+}
+.sfin4{
+  width: 40%;
+  float: left;
+  height: 3px;
+  margin-left: 50%;
+  margin-right: 0%;
+  background-color: #c7c7c7;
+  position: absolute;
+  margin-top: 16%; 
+}
+.sfin5{
+  width: 40%;
+  float: left;
+  height: 3px;
+  margin-left: 0%;
+  margin-right: 0%;
+  background-color: #c7c7c7;
+  position: absolute;
+  margin-top: 24%; 
+}
+.sfin6{
+  width: 40%;
+  float: left;
+  height: 3px;
+  margin-left: 50%;
+  margin-right: 0%;
+  background-color: #c7c7c7;
+  position: absolute;
+  margin-top: 24%; 
+}
+#go-top {
+  position:fixed; 
+  bottom: 4%; 
+  right: 3%; 
+  cursor:pointer; 
+  display:none;
+  width: 50px;
+  height: 20px;
+}
+ 
+#go-top:hover {
+  background: #31313a;
+}
+form{
+max-width: 400px;
+width: 40vw;
+margin: 0 auto;
+margin-top: 3%;
+}
+input{
+box-sizing: border-box;
+display: block;
+border: none;
+box-shadow: inset 0px 0px 4px 1px #c7c7c7;
+padding: 10px 20px;
+width: 100%;
+margin: 10% 0;
+outline: none;
+border-radius: 7px;
+
+}
+input[type="submit"]{
+background: red;
+border: none;
+box-shadow: 0px 2px 0 1px #C50909;
+border-radius: 5px;
+color: white;
+text-transform: uppercase;
+font-weight: 600;
+width: 50%;
+cursor: pointer;
+transition: 0.3s;
+margin-left: 25%;
+margin-right: 25%;
+}
+input[type="submit"]:hover{
+background: #31313a;
+box-shadow: 0px 2px 0 1px #31313a;
+}
+.five{
+  width: 100%;
+  height: 25vw;
+}
+.cont{
+  font-size: 1.2vw;
+  margin-left: 45.8%;
+  border-bottom: 1px solid red; 
+  width: 8vw;
+  margin-top: 0%;
+  text-align: center;
+}
